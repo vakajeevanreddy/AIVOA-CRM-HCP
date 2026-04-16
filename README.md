@@ -1,59 +1,53 @@
-<<<<<<< HEAD
-# AIVOA - AI-Powered Medical CRM
+# AIVOA CRM HCP
 
-AIVOA is a high-precision CRM assistant designed to streamline interactions between pharmaceutical representatives and Healthcare Professionals (HCPs). It uses advanced AI to extract clinical data, summarize medical discussions, and suggest next clinical steps.
+AI-powered CRM application for documenting Healthcare Professional (HCP) interactions.  
+This project includes a **React frontend** and a **Python backend**.
 
-## Features
+---
 
--   **AI Voice Summary**: Automatically generates professional clinical summaries from interaction notes.
--   **Next Clinical Steps**: Provides actionable follow-ups focused on medical education and clinical evidence.
--   **Structured Extraction**: Extracts HCP names, specialties, organizations, and product focus from unstructured text.
--   **Real-time Integration**: Frontend React application integrated with a FastAPI backend.
+## 🚀 Features
+- Frontend built with React + Vite
+- Backend powered by Python (FastAPI/Flask)
+- AI Assistant component for interaction logging
+- Redux state management
+- Clean project structure with `.gitignore` to exclude dependencies
 
-## Prerequisites
+---
 
--   Python 3.10+
--   Node.js & npm
--   Groq API Key (Place in `Back_end/.env`)
+## 📂 Project Structure
+AIVOA/
+│
+├── Front_end/        # React frontend
+│   ├── Components/   # UI components (AIAssistant, InteractionForm, Chatbox)
+│   ├── pages/        # Page-level views
+│   ├── Redux/        # State management
+│   ├── app.jsx
+│   ├── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── Back_end/         # Python backend
+│   ├── main.py / server.py
+│   └── requirements.txt
+│
+├── .gitignore
+├── README.md
+└── start_backend.bat
 
-## Getting Started
 
-### Backend Setup
+---
 
-1.  Navigate to the `Back_end` directory.
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  Ensure your `.env` file has your `GROQ_API_KEY`.
-4.  Run the backend:
-    ```bash
-    ../start_backend.bat
-    ```
-    (Or `python -m uvicorn main:app --reload --port 8000`)
+## ⚙️ Setup Instructions
 
-### Frontend Setup
+### Frontend (React + Vite)
+```bash
+cd Front_end
+npm install
+npm run dev
 
-1.  Navigate to the `Front_end` directory.
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Run the development server:
-    ```bash
-    npm run dev
-    ```
 
-## Project Structure
-
--   `Back_end/`: FastAPI server, database models, and AI tools.
--   `Front_end/`: React components and UI styles.
--   `start_backend.bat`: Convenience script to launch the backend.
-
-## AI Configuration
-
-The AI logic is handled via LangGraph-style tools located in `Back_end/tools/`. Prompts have been refined for clinical excellence and professional reporting.
-=======
-# AIVOA-CRM-HCP
-AI-powered CRM for documenting HCP interactions with frontend (React) and backend (FastAPI).
->>>>>>> 4ba1ceccb88007b53cf96845a70eb03174c83e7b
+cd Back_end
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+python start_backend.bat
