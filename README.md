@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AIVOA - AI-Powered Medical CRM
 
 AIVOA is a high-precision CRM assistant designed to streamline interactions between pharmaceutical representatives and Healthcare Professionals (HCPs). It uses advanced AI to extract clinical data, summarize medical discussions, and suggest next clinical steps.
@@ -52,3 +53,7 @@ AIVOA is a high-precision CRM assistant designed to streamline interactions betw
 ## AI Configuration
 
 The AI logic is handled via LangGraph-style tools located in `Back_end/tools/`. Prompts have been refined for clinical excellence and professional reporting.
+=======
+# AIVOA-CRM-HCP
+AI-powered CRM for documenting HCP interactions with frontend (React) and backend (FastAPI).
+>>>>>>> 4ba1ceccb88007b53cf96845a70eb03174c83e7b
